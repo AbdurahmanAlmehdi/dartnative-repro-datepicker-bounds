@@ -1,5 +1,7 @@
 # Repro: `showDatePicker` has no `initialDate` / `firstDate` / `lastDate` (and no `showDateRangePicker`)
 
+Issue: https://github.com/DartNative/dartnative/issues/59
+
 DartNative 1.0.0's `showDatePicker` takes only `context`, `mode` and `confirmText`. The picker always opens on today and accepts any date, so a form can't open it on the field's current value or keep a pick inside a range (no future days, a report's month). There is no `showDateRangePicker` either.
 
 ## Run
